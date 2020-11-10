@@ -1,0 +1,27 @@
+
+entity KanSeries {
+	seriesId Integer,
+    title String,
+    text String,
+    img String,
+    webPage String
+}
+
+entity KanEpisode {
+	episodeId Integer,
+    seriesId Integer,
+    title String,
+    text String,
+    img String,
+    videoSrc String
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	KanSeries to KanEpisode{seriesId}
+}
+
+// Set pagination options
+paginate KanEpisode with infinite-scroll
+paginate KanSeries with pagination
+

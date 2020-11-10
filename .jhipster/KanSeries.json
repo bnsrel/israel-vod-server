@@ -1,0 +1,44 @@
+{
+  "name": "KanSeries",
+  "fields": [
+    {
+      "fieldName": "seriesId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "text",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "img",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "webPage",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "kanEpisode",
+      "otherEntityRelationshipName": "seriesId",
+      "relationshipName": "kanEpisode"
+    }
+  ],
+  "changelogDate": "20201110140018",
+  "entityTableName": "kan_series",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

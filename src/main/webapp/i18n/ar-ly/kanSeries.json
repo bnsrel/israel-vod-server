@@ -1,0 +1,27 @@
+{
+  "israelVodServerApp": {
+    "kanSeries": {
+      "home": {
+        "title": "Kan Series",
+        "createLabel": "Create a new Kan Series",
+        "createOrEditLabel": "Create or edit a Kan Series",
+        "notFound": "No Kan Series found"
+      },
+      "created": "A new Kan Series is created with identifier {{ param }}",
+      "updated": "A Kan Series is updated with identifier {{ param }}",
+      "deleted": "A Kan Series is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Kan Series {{ id }}?"
+      },
+      "detail": {
+        "title": "Kan Series"
+      },
+      "seriesId": "Series Id",
+      "title": "Title",
+      "text": "Text",
+      "img": "Img",
+      "webPage": "Web Page",
+      "kanEpisode": "Kan Episode"
+    }
+  }
+}
