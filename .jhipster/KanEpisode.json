@@ -1,0 +1,49 @@
+{
+  "name": "KanEpisode",
+  "fields": [
+    {
+      "fieldName": "episodeId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "seriesId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "text",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "img",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "videoSrc",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "kanSeries",
+      "otherEntityRelationshipName": "kanEpisode",
+      "relationshipName": "seriesId",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201110140118",
+  "entityTableName": "kan_episode",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
